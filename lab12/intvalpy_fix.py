@@ -86,6 +86,7 @@ def Intervals2Path(S):
     P = [bp]
 
     while len(S) > 0:
+        index = 0
         for k in range(len(S)):
             if np.max(np.abs(bs - S[k, :2])) < 1e-8:
                 index = k
